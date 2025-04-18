@@ -275,9 +275,9 @@ body {
 
 .contact-box {
   width: 100%;
-  max-width: 400px;
+  max-width: 340px;
   background: linear-gradient(135deg, var(--contact-gradient-1), var(--contact-gradient-2));
-  padding: 40px 30px;
+  padding: 30px 25px;
   color: white;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
@@ -292,40 +292,46 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 150px;
-  height: 150px;
-  background: rgba(255,255,255,0.1);
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.08);
   border-radius: 50%;
   transform: translate(50%, -50%);
 }
 
 .contact-box h3 {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   font-weight: 600;
-  word-break: break-word;
 }
 
 .contact-box p {
-  margin: 15px 0;
-  font-size: 1.1rem;
+  margin: 12px 0;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 10px;
-  word-break: break-word;
+  gap: 8px;
 }
 
-@media (max-width: 576px) {
+/* Responsif Ekstra Kecil */
+@media (max-width: 480px) {
   .contact-box {
-    padding: 30px 20px;
+    max-width: 300px;
+    padding: 25px 20px;
+    border-radius: 16px;
   }
 
   .contact-box h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .contact-box p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-box::before {
+    width: 100px;
+    height: 100px;
   }
 }
 
