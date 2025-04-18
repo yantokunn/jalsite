@@ -33,6 +33,12 @@
   --btn-outline-hover: #2c2c2c;
 }
 
+/* ===== Anti Overflow Horizontal ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
